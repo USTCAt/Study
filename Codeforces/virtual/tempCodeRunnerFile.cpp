@@ -1,0 +1,2 @@
+  }
+  cout<min_sum<<endl;
