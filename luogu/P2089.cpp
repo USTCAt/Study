@@ -70,6 +70,7 @@ int main()
       
     
   }
+  cout<<ans<<endl;
   for(int k=0;k < ans;k++)
   {
     for(int num: res[k])
