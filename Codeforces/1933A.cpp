@@ -3,20 +3,21 @@
 using namespace std;
 
 int main() {
+    
     int t;
-    cin >> t;
-    while (t--) {
+    cin>>t;
+    for(int i = 0;i < t; i ++)
+    {
         int n;
-        cin >> n;
-        vector<int> arr(n);
-        for (int i = 0; i < n; i++) {
-            cin >> arr[i];
+        cin>>n;
+        int sum=0;
+        for(int j = 0;j < n;j++)
+        {
+            int num;
+            cin>>num;
+            sum+=abs(num);
         }
-        int sum = 0;
-        for (int i = 0; i < n; i++) {
-            sum += abs(arr[i]);
-        }
-        cout << sum << endl;
+        cout<<sum;
     }
     return 0;
 }
