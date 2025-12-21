@@ -45,7 +45,7 @@ vector<int> KMP(const string& text ,const string& pattern)//text文本串 patter
     if(j == m)//模式串匹配成功，返回起始下标
     {
       res.push_back(i - m + 1);
-      j=next[ j - 1 ];//题目要求返回所有对应下标，正常来说这里应该返回了
+      j = next[ j - 1 ];//题目要求返回所有对应下标，正常来说这里应该返回了
     }
   }
   delete[] next;//类似于C里面的free()
